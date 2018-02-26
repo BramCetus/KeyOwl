@@ -1,5 +1,5 @@
 # What is KeyOwl?
-KeyOwl is a keylogger. That means that it records everything typed by the user of the device it runs on.
+KeyOwl is a keylogger. Which means that it records everything typed by the user of the device it runs on.
 It runs on startup (if everything goes right) and sends you all the data using Gmail.
 
 # What does it do exactly?
